@@ -1,0 +1,1 @@
+Rajputs Del Mundo Order confirmation number {{ order.order_number }}
