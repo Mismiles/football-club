@@ -4,10 +4,11 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product
 from .forms import ProductForm
 
 # Create your views here.
+# Categories not coded. Review need towards end
 
 def all_products(request):
     """ A view to show all products, inclusive of sorting and searching"""
@@ -107,7 +108,7 @@ def edit_product(request, product_id):
     
     else:
         form = ProductForm(instance=product)
-        messages.info(request, f'You are editing{product.name}')
+        messages.info(request, f'You are editing {product.name}')
 
     template = 'products/edit_product.html'
     context = {
@@ -123,7 +124,7 @@ def delete_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only admins can perform this action')
         return redirect(redirect('home'))
-        
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
