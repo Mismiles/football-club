@@ -89,7 +89,7 @@
             <li><a href="{% url 'products' %}">Shop</a></li>
             {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
-                    <li><a href="">Site Management</a></li>
+                    <li><a href="{% url 'add_product' %}">Shop manager</a></li>
                 {% endif %}
                 <li><a href="{% url 'profile' %}">My Profile</a></li>
                 <li><a href="{% url 'account_logout' %}">Logout</a></li>
@@ -169,14 +169,23 @@
                    <li><a href="{% url 'about' %}">About Us</a></li>
                    <li><a href="{% url 'news' %}">News</a></li>
                    <li><a href="{% url 'matches' %}">Matches</a></li>
+                   <li><a href="{% url 'team' %}">Team</a></li>
                 </ul>
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="{% url 'team' %}">Team</a></li>
-                  <li><a href="{% url 'home' %}">Shop</a></li>
                   <li><a href="{% url 'contact' %}">Contact</a></li>
-                  <li><a href="#">Membership</a></li>
+                  <li><a href="{% url 'home' %}">Shop</a></li>
+                {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                    <li><a href="{% url 'add_product' %}">Shop manager</a></li>
+                {% endif %}
+                <li><a href="{% url 'profile' %}">My Profile</a></li>
+                <li><a href="{% url 'account_logout' %}">Logout</a></li>
+            {% else %}
+                <li><a href="{% url 'account_login' %}">Login</a></li>
+                <li><a href="{% url 'account_signup' %}">Register</a></li>
+            {% endif %}
                 </ul>
               </div>
             </div>
