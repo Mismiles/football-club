@@ -10,6 +10,7 @@ from .forms import ProductForm
 # Create your views here.
 # Categories not coded. Review need towards end
 
+
 def all_products(request):
     """ A view to show all products, inclusive of sorting and searching"""
 
@@ -52,6 +53,7 @@ def all_products(request):
 
     return render(request, 'products/products.html', context)
 
+
 def product_detail(request, product_id):
     """ A view to show individual product details"""
 
@@ -63,13 +65,14 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+
 @login_required
 def add_product(request):
     """A view to add a product to the store catalogue"""
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only admins can perform this action')
         return redirect(redirect('home'))
-        
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -88,6 +91,7 @@ def add_product(request):
 
     return render(request, template, context)
 
+
 @login_required
 def edit_product(request, product_id):
     """A view to edit a product in the store catalogue"""
@@ -96,16 +100,16 @@ def edit_product(request, product_id):
         return redirect(redirect('home'))
 
     product = get_object_or_404(Product, pk=product_id)
-    
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            messages.success(request, 'the product has successfully updated')
+            messages.success(request, 'The product has successfully updated')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Product update failed. Please ensure the form is completed properly')
-    
+
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -117,6 +121,7 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_product(request, product_id):
