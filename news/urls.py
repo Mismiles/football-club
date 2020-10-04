@@ -4,4 +4,5 @@ from django.urls import path
 urlpatterns = [
     path('', views.news_list.as_view(), name='news'),
     path('<slug:slug>/', views.news_detail.as_view(), name='news_detail'),
+    path('<slug:slug>/', views.post_detail, name='post_detail')
 ]

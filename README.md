@@ -1,24 +1,32 @@
 ## Football club website
 
-The project aims to make a Football club website for the team Rajputs Del Mundo. The website is designed for team members to have access to the member features, fans to know about the club, people to purchase products, team members to show profiles, match reports and highlights to be viewed, so that the club could be "out there" in the world.
+The project aims to make a Football club website for the team Rajputs Del Mundo. 
+
+The website is designed for team members to have access to the member features, fans to know about the club, people to purchase products, team members to show their profiles, match reports and highlights to be viewed, so that the club could be "out there" in the world.
  
 ## UX
 The website has a few audiences.
 
 Firstly fans who want to keep updated about the club.
+
 Secondly club members who have a platform to express themselves.
+
 Thirdly, sponsors who wish to work with the club.
+
 Forthly football fans who come accross the webpage.
 
-As a club fan, I would like to keep updated about the football club. 
+As a club fan, I would like to keep updated about the football club.
+
 As a club fan, I would like to purchase merchandise and the club kit.
 As a club fan, I would like to know about news related to the club.
 As a club fan, I would like to know about match fixtures and results.
+
 As a club member, I would like to know about match fixtures and results.
 As a club member, I would like to know about news related to the club.
 As a club member, I would like to purchase merchandise and the club kit.
 As a club member, I would like to add my own club member profile. 
 As a club member, I would like to pay for matches and training sessions.
+
 As a potential sponsor, I would like to be able to contact the club for potential collaboration.
 
 
@@ -79,10 +87,28 @@ The code was not tested owing to time contraints.
 
 To run the project, simply go to http://project-football.herokuapp.com/
 
+## To run locally
+
+Simply clone this repository using $ git clone https://github.com/Mismiles/football-club.git
+
+To install dependencies for the app to run from the requirements.txt file, run the following command in the terminal "pip3 install -r requirements.txt"
+
+Set your environment variables e.g. IP: 127.0.0.1 and PORT: 5000 to view the site in the browser.
+
+If running locally, set debug to "True" at the very bottom of app.py.
+
+Ensure you have a secret key set.
+
+Run the code in an IDE (Integrated development environment) by loading "python3 manage.py runserver" (note the app was built using python3)
+
 ## Credits
 
 ### Content
 - The bag, products, checkout, stripe payments, admin coding was taken from the course content.
+
+-The news section and comments associated with this were built using (https://djangocentral.com/building-a-blog-application-with-django/)
+
+-The contact form was built adapting code from: https://learndjango.com/tutorials/django-email-contact-form
 
 ### Media
 The media was obtained from this template, (https://colorlib.com/wp/template/sportz/) which is also referenced in the footer. 
