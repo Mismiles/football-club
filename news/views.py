@@ -7,7 +7,7 @@ from .forms import CommentForm
 class news_list(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'news/news.html'
-    paginate_by = 4
+    paginate_by = 3
 
 
 class news_detail(generic.DetailView):

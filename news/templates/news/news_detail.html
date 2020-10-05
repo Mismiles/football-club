@@ -1,13 +1,12 @@
 {% extends 'base.html' %} 
 {% load static %}
 {% block content %}
-{% load crispy_forms_tags %}
 
 <div class="container">
   <div class="row">
     <div class="col-md-8 card mb-4  mt-3 left  top">
       <div class="card-body">
-        <h1>{% block title %} {{ post.title }} {% endblock title %}</h1>
+        <h1>{{ post.title }}</h1>
         <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
         <p class="card-text ">{{ post.content | safe }}</p>
       </div>
@@ -16,9 +15,13 @@
 <div class="col-md-8 card mb-4  mt-3 ">
       <div class="card-body">
         <!-- comments -->
-        <h2>{{ comments.count }} Comments</h2>
+        {% with comments.count as total_comments %}
+        <h2>{{ total_comments }} Comments</h2>
 
-        {% for comment in comments %}
+        <p>
+          {% endwith %} {% for comment in comments %}
+        </p>
+
         <div class="comments" style="padding: 10px;">
           <p class="font-weight-bold">
             {{ comment.name }}
@@ -28,6 +31,7 @@
           </p>
           {{ comment.body | linebreaks }}
         </div>
+
         {% endfor %}
       </div>
     </div>
