@@ -105,6 +105,8 @@ input[name='q']::placeholder {
     z-index: 9999999999 !important;  
 }
 
+/* ------------------------------- bootstrap toasts */
+
 .custom-toast {
     overflow: visible;
 }
@@ -112,6 +114,7 @@ input[name='q']::placeholder {
 .toast-capper {
     height: 2px;
 }
+
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
