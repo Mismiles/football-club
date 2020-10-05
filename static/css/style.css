@@ -844,6 +844,7 @@ a:hover {
 .feature-blocks-1 {
   position: relative;
   margin-top: -70px;
+  margin-bottom: -40px;
   z-index: 2;
   color: #999999;
 }
