@@ -16,7 +16,6 @@ Thirdly, sponsors who wish to work with the club.
 Forthly football fans who come accross the webpage.
 
 As a club fan, I would like to keep updated about the football club.
-
 As a club fan, I would like to purchase merchandise and the club kit.
 As a club fan, I would like to know about news related to the club.
 As a club fan, I would like to know about match fixtures and results.
@@ -24,7 +23,7 @@ As a club fan, I would like to know about match fixtures and results.
 As a club member, I would like to know about match fixtures and results.
 As a club member, I would like to know about news related to the club.
 As a club member, I would like to purchase merchandise and the club kit.
-As a club member, I would like to add my own club member profile. 
+As a club member, I would like to have my own club member profile. 
 As a club member, I would like to pay for matches and training sessions.
 
 As a potential sponsor, I would like to be able to contact the club for potential collaboration.
@@ -51,8 +50,7 @@ The site has a user login system for users.
 None of the features could be built in time
 
 ### Features Left to Implement
-A working shop system for payments and user data to be processed
-A news input blog system for members to post news on a regular basis 
+Team profiles for specific players to add their information.
 
 
 ## Technologies Used
@@ -86,7 +84,7 @@ The code was not tested owing to time contraints.
 
 ## Deployment
 
-To run the project, simply go to http://project-football.herokuapp.com/
+To run the project, simply go to https://club-football.herokuapp.com/
 
 ## To run locally
 
@@ -105,9 +103,9 @@ Run the code in an IDE (Integrated development environment) by loading "python3 
 ## Credits
 
 ### Content
-- The bag, products, checkout, stripe payments, admin coding was taken from the course content.
+- The bag, products, checkout, stripe payments, admin application was taken from the course content.
 
--The news section and comments associated with this were built using (https://djangocentral.com/building-a-blog-application-with-django/)
+-The news section was built using (https://djangocentral.com/building-a-blog-application-with-django/)
 
 -The contact form was built adapting code from: https://learndjango.com/tutorials/django-email-contact-form
 

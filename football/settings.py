@@ -25,8 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'f)*1%w0968g#arwk#t$f^^$elcpti4r33yd1ne%fm_&0tepx$r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
-# DEBUG = True
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['club-football.herokuapp.com', 'localhost']
 
