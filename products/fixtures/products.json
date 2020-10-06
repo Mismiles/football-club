@@ -10,7 +10,7 @@
       "category": 1,
       "rating": 4.6,
       "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "jean.jpg",
+      "image": "jean.jpg"
     }
   },
   {
@@ -24,7 +24,7 @@
       "category": 4,
       "rating": 4.6,
       "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "trouser.jpg",
+      "image": "trouser.jpg"
     }
   },
   {
@@ -38,7 +38,7 @@
       "category": 2,
       "rating": 4.7,
       "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1230201417013175M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "bed.jpg",
+      "image": "bed.jpg"
     }
   },
   {
@@ -52,7 +52,7 @@
       "category": 3,
       "rating": 3,
       "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0716201503423610M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "crockery.jpg",
+      "image": "crockery.jpg"
     }
   }
 ]
