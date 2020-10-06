@@ -22,6 +22,17 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% endblock %}
 
+    {% block jquerycdn %}
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+      <!--Stripe payments-->
+    <script src="https://js.stripe.com/v3/"></script>
+    {% endblock %}
+
   <title>Rajputs Del Mundo FC {% block extra_title %}{% endblock %}</title>
 
   </head>
@@ -243,13 +254,7 @@
     {% endblock %}
 
     {% block postloadjs %}
-    {{ block.super }}
-    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
     <script type="text/javascript">
-          $('.toast').toast({
-    'autohide': false
-  });
-
   $('.toast').toast('show');
     </script>
     {% endblock %}
@@ -269,9 +274,6 @@
     <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'js/aos.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
-    <!--Stripe payments-->
-    <script src="https://js.stripe.com/v3/"></script>
-
     {% endblock %}
 
 </html>

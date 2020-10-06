@@ -37,7 +37,8 @@ No wireframe was made for the project.
 ## Features
 
 The site has the club profile and about information showing its origin. 
-The site has relevant social media links.
+The site has relevant social media links for facebook, instagram and twitter.
+The site has email and telephone number links to contact the organisers.
 The site has a news section for club news.
 It also has a matches section to show past and future matches.
 The site has a team section for team members.
@@ -75,7 +76,7 @@ the maintenance dose of vancomycin and the frequency of monitoring of the drug.
 - [JQuery](https://jquery.com)
 The project uses **JQuery** to simplify DOM manipulation. In this project, it was only used for the bootstrap features.
 
-[Python] Python was used to backend functionality to the application.
+[Python] Python was used to process the backend functionality to the application.
 
 [Django] Django was used to link the front and backend of the application.
 
@@ -112,6 +113,8 @@ Run the code in an IDE (Integrated development environment) by loading "python3 
 
 ### Media
 The media was obtained from this template, (https://colorlib.com/wp/template/sportz/) which is also referenced in the footer. 
+
+Some of the shop stock images and the initial large picture blocks for the matches, team and contact section were obtained from https://www.pexels.com/ .
 
 The images and videos outside of this were obtained (with permission) from the club members. 
 

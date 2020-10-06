@@ -98,14 +98,14 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* ------------------------------- bootstrap toasts */
+
 .message-container {
     position:absolute;
     top: 70px;
     right: 10px;
     z-index: 9999999999 !important;  
 }
-
-/* ------------------------------- bootstrap toasts */
 
 .custom-toast {
     overflow: visible;
