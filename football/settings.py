@@ -28,7 +28,7 @@ SECRET_KEY = 'qz*jcqf5!gqbh(7xqiqadh^xcs4-!c-y*_sqt54t0uk_la8)f$'
 DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
-ALLOWED_HOSTS = ['project-football.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['club-football.herokuapp.com/', 'localhost']
 
 
 # Application definition
