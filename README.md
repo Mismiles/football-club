@@ -103,15 +103,15 @@ Run the code in an IDE (Integrated development environment) by loading "python3 
 ## Credits
 
 ### Content
+- The front end design was obtained from this template, (https://colorlib.com/wp/template/sportz/) which is also referenced in the footer. 
+
 - The bag, products, checkout, stripe payments, admin application was taken from the course content.
 
--The news section was built using (https://djangocentral.com/building-a-blog-application-with-django/)
+-The news section was built adapting code from: https://djangocentral.com/building-a-blog-application-with-django/
 
 -The contact form was built adapting code from: https://learndjango.com/tutorials/django-email-contact-form
 
 ### Media
-The media was obtained from this template, (https://colorlib.com/wp/template/sportz/) which is also referenced in the footer. 
-
 Some of the shop stock images and the initial large picture blocks for the matches, team and contact section were obtained from https://www.pexels.com/ .
 
 The images and videos outside of this were obtained (with permission) from the club members. 

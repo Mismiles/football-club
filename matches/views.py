@@ -1,8 +1,13 @@
-from django.shortcuts import render
+from django.views import generic
+from .models import Post
 
-# Create your views here.
 
-def matches(request):
-    """ A view to go to team.html """
+class match_list(generic.ListView):
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'matches/matches.html'
+    paginate_by = 3
 
-    return render(request, 'matches/matches.html')
+
+class match_detail(generic.DetailView):
+    model = Post
+    template_name = 'matches/match_detail.html'
