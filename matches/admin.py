@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
 
-from .models import Post
+from .models import Match
 
 
-class PostAdmin(SummernoteModelAdmin):
+class MatchAdmin(SummernoteModelAdmin):
     list_display = ('title', 'slug', 'status', 'created_on')
     list_filter = ("status",)
     search_fields = ['title', 'content']
@@ -13,4 +13,4 @@ class PostAdmin(SummernoteModelAdmin):
     summernote_fields = ('content',)
 
 
-admin.site.register(Post, PostAdmin)
+admin.site.register(Match, MatchAdmin)

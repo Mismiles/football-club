@@ -21,14 +21,13 @@
         <div class="row mb-5">
             <div class="col-md-8 card mb-4  mt-3 left  top">
                 <div class="card-body">
-                    <h1>{{ post.title }}</h1>
-                    <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
-                    <p class="card-text ">{{ post.content | safe }}</p>
-                    <p class="card-text ">Man of the match <strong>{{ post.man_of_the_match | safe }}</strong></p>
+                    <h1>{{ match.title }}</h1>
+                    <p class=" text-muted">{{ match.author }} | {{ match.created_on }}</p>
+                    <p class="card-text ">{{ match.content | safe }}</p>
+                    <p class="card-text ">Man of the match <strong>{{ match.man_of_the_match | safe }}</strong></p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}
