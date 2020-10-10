@@ -256,6 +256,9 @@
     {% block postloadjs %}
     <script type="text/javascript">
   $('.toast').toast('show');
+  $('.toast').click(function(){
+      $('.message-container').addClass('hideToast');
+      });
     </script>
     {% endblock %}
 

@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block content%}
 
     <div class="site-blocks-cover overlay" style="background-image: url({% static 'images/match_background.jpg' %});" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -13,7 +14,7 @@
       </div>
     </div>
 
-    <!-- News posts -->
+    <!-- Match posts -->
 
 <div class="site-section">
       <div class="container">
@@ -32,7 +33,7 @@
                     <img src="images/img_3.jpg" alt="Image" class="img-fluid">
                 </div>
             <span class="text-uppercase date d-block mb-3"><small>{{ post.author }} | {{ post.created_on}}</small></span>
-            <p class="mb-0">{{post.content|slice:":200"| safe  }}</p>
+            <p class="mb-0">{{post.content | slice:":200" | safe}}</p>
             <a href="{% url 'match_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
         </div>
         {% endfor %}

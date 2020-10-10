@@ -115,6 +115,10 @@ input[name='q']::placeholder {
     height: 2px;
 }
 
+.hideToast {
+    z-index: 0 !important;
+}
+
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
