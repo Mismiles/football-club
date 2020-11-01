@@ -36,9 +36,9 @@
             <p class="mb-0">{{match.content | slice:":200" | safe}}</p>
             <a href="{% url 'match_detail' match.slug  %}" class="btn btn-primary">Read More &rarr;</a>
         </div>
-        {% endfor %}
         </div>
     </div>
+    {% endfor %}
     </div>
  </div>
 </div>

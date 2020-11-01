@@ -24,9 +24,9 @@
           </div>
         </div>
         <div class="row">
+        {% for post in post_list %}
     <div class="col-md-6 col-lg-4 mb-4">
     <div class="post-entry">
-        {% for post in post_list %}
         <div class="text p-4">
             <h2 class="h5 text-black">{{ post.title }}</h2>
                 <div class="image">
@@ -36,9 +36,9 @@
             <p class="mb-0">{{post.content | slice:":200" | safe}}</p>
             <a href="{% url 'news_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
         </div>
-        {% endfor %}
         </div>
     </div>
+    {% endfor %}
     </div>
  </div>
 </div>
