@@ -17,6 +17,7 @@ class Match(models.Model):
     man_of_the_match = models.CharField(max_length=200, unique=True)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    image = models.ImageField(upload_to='media', null=True)
 
     class Meta:
         ordering = ['-created_on']
