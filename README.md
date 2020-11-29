@@ -47,10 +47,14 @@ The site has an admin app for admins to control the site.
 The site has a user login system for users.
 
 ### Existing Features
-None of the features could be built in time
+There is a shop feature which includes 
 
 ### Features Left to Implement
-Team profiles for specific players to add their information.
+-Team profiles for specific players to add their information.
+
+-A fixtures and results app to show upcoming fixtures and past results.
+
+-
 
 
 ## Technologies Used
@@ -101,6 +105,10 @@ Ensure you have a secret key set.
 Run the code in an IDE (Integrated development environment) by loading "python3 manage.py runserver" (note the app was built using python3)
 
 ## Credits
+
+-Huge credit to the Rajputs Del Mundo team for their input and permission to be used as part of the project.
+
+-Many thanks to the team at Code Institute for their support, feedback and patience.
 
 ### Content
 - The front end design was obtained from this template, (https://colorlib.com/wp/template/sportz/) which is also referenced in the footer. 

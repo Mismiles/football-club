@@ -9,19 +9,6 @@
 <nav class="navbar active navbar-expand navbar-dark bg-dark active sticky-top">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mx-auto">
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Sort by
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price</a>
-          <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">Rating</a>
-          <a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">Category</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="{% url 'products' %}">All products</a>
-        </div>
-      </li>
-
             <li class="nav-item">
                 <form class="navbar-form" method="GET" action="{% url 'products' %}">
     <input class="form-control nav-item border border-black rounded-pill" type="text" name="q" placeholder="Search our products">
@@ -38,7 +25,6 @@
             <div class="col bg-black text-white">
                 <h4 class="logo-font my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>                
             </div>            
-        </div>
         </div>
 
     <div class="overlay"></div>
