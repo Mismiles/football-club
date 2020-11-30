@@ -80,9 +80,9 @@ the maintenance dose of vancomycin and the frequency of monitoring of the drug.
 - [JQuery](https://jquery.com)
 The project uses **JQuery** to simplify DOM manipulation. In this project, it was only used for the bootstrap features.
 
-[Python] Python was used to process the backend functionality to the application.
+- [Python] Python was used to process the backend functionality to the application.
 
-[Django] Django was used to link the front and backend of the application.
+- [Django] Django was used to link the front and backend of the application.
 
 ## Testing
 - News posts:
