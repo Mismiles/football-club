@@ -47,14 +47,16 @@ The site has an admin app for admins to control the site.
 The site has a user login system for users.
 
 ### Existing Features
-There is a shop feature which includes 
+- There is a shop feature which includes the club kits and fees for members.
+
+- There is a "news" section whereby admins can post news about the club.
+
+- A "matches" section exists to add match reports to the site.
 
 ### Features Left to Implement
--Team profiles for specific players to add their information.
+- Team profiles for specific players to add their information.
 
--A fixtures and results app to show upcoming fixtures and past results.
-
--
+- A fixtures and results app to show upcoming fixtures and past results.
 
 
 ## Technologies Used
@@ -83,8 +85,17 @@ The project uses **JQuery** to simplify DOM manipulation. In this project, it wa
 [Django] Django was used to link the front and backend of the application.
 
 ## Testing
+- News posts:
+To test the news posting, simply login as an adminstrator. Go to "admin". Fill out a post and click "submit". Then go back to the "news" section of the site to see it.
 
-The code was not tested owing to time contraints.
+- Match reports:
+To test the match reports, simply login as an adminstrator. Go to "matches". Fill out a match report and click "submit". Then go back to the "matches" section of the site to see it.
+
+-Shop:
+To test the shop functionality: click "shop". Search for or select a product. Add the product to the bag. Update the quantity as needed. Go to secure checkout. Fill in the details and card number. Use the dummy card number "4242 4242 4242 4242", fill out any future date and 3 digits for the "CVC". Fill out a dummy zip code (note the stripe code will automatically format the customer’s billing address country based on their card number). Click complete order. The transaction is now complete.
+
+- Contact
+To test the contact form, click "contact". Fill out the form and click "submit".
 
 ## Deployment
 
@@ -106,21 +117,21 @@ Run the code in an IDE (Integrated development environment) by loading "python3 
 
 ## Credits
 
--Huge credit to the Rajputs Del Mundo team for their input and permission to be used as part of the project.
+- Huge credit to the Rajputs Del Mundo team for their input and permission to be used as part of the project.
 
--Many thanks to the team at Code Institute for their support, feedback and patience.
+- Many thanks to the team at Code Institute for their support, feedback and patience.
 
 ### Content
 - The front end design was obtained from this template, (https://colorlib.com/wp/template/sportz/) which is also referenced in the footer. 
 
-- The bag, products, checkout, stripe payments, admin application was taken from the course content.
+- The bag, products, checkout, stripe payments, profiles and admin application was taken from the course content.
 
 -The news section was built adapting code from: https://djangocentral.com/building-a-blog-application-with-django/
 
 -The contact form was built adapting code from: https://learndjango.com/tutorials/django-email-contact-form
 
 ### Media
-Some of the shop stock images and the initial large picture blocks for the matches, team and contact section were obtained from https://www.pexels.com/ .
+Some of the shop stock images and the initial large picture blocks for the matches, team, a nrews post and contact section were obtained from https://www.pexels.com/ .
 
 The images and videos outside of this were obtained (with permission) from the club members. 
 
