@@ -30,7 +30,7 @@
         <div class="text p-4">
             <h2 class="h5 text-black">{{ post.title }}</h2>
                 <div class="image">
-                    <img src="" alt="Image" class="img-fluid">
+                    <img src="{{ post.image.url }}" alt="Image" class="img-fluid">
                 </div>
             <span class="text-uppercase date d-block mb-3"><small>{{ post.author }} | {{ post.created_on}}</small></span>
             <a href="{% url 'news_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
