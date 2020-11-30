@@ -96,7 +96,7 @@
             {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
                     <li><a href="{% url 'add_product' %}">Shop manager</a></li>
-                    <li><a href="{% url 'admin:index' %}">Site Admin</a></li>
+                    <li><a href="{% url 'admin:index' %}">Admin</a></li>
                 {% endif %}
                 <li><a href="{% url 'profile' %}">My Profile</a></li>
                 <li><a href="{% url 'account_logout' %}">Logout</a></li>
@@ -186,7 +186,7 @@
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
                     <li><a href="{% url 'add_product' %}">Shop manager</a></li>
-                    <li><a href="{% url 'admin:index' %}">Site Admin</a></li>
+                    <li><a href="{% url 'admin:index' %}">Admin</a></li>
                 {% endif %}
                 <li><a href="{% url 'profile' %}">My Profile</a></li>
                 <li><a href="{% url 'account_logout' %}">Logout</a></li>
