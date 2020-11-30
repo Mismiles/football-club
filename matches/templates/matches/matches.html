@@ -30,7 +30,7 @@
         <div class="text p-4">
             <h2 class="h5 text-black">{{ match.title }}</h2>
                 <div class="image">
-                    <img src="" alt="Image" class="img-fluid">
+                    <img src="{{ match.image }}" alt="Image" class="img-fluid">
                 </div>
             <span class="text-uppercase date d-block mb-3"><small>{{ match.author }} | {{ match.created_on}}</small></span>
             <a href="{% url 'match_detail' match.slug  %}" class="btn btn-primary">Read More &rarr;</a>
